@@ -30,18 +30,16 @@ const defaultFilter = (option, filterInput) => {
     return (new RegExp(escapeRegExp(filterInput), 'i')).test(option.label);
 };
 const defaultIcons = {
-    moveLeft: <span className="fa fa-chevron-left" />,
+    moveLeft: <svg width="20px"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>,
     moveAllLeft: [
-        <span key={0} className="fa fa-chevron-left" />,
-        <span key={1} className="fa fa-chevron-left" />,
+         <svg  width="20px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg>
     ],
-    moveRight: <span className="fa fa-chevron-right" />,
+    moveRight: <svg width="20px"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>,
     moveAllRight: [
-        <span key={0} className="fa fa-chevron-right" />,
-        <span key={1} className="fa fa-chevron-right" />,
+        <svg width="20px"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
     ],
-    moveDown: <span className="fa fa-chevron-down" />,
-    moveUp: <span className="fa fa-chevron-up" />,
+    moveDown: <svg  width="20px"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>,
+    moveUp: <svg width="20px"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7"></path></svg>,
 };
 
 class DualListBox extends React.Component {
